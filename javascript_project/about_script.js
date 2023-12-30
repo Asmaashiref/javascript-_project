@@ -1,0 +1,29 @@
+///?///?/??????????????????? navbar ////??????????????????????????????????????????
+function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('responsive');
+}
+///?///?/??????????????????? footer ////??????????????????????????????????????????
+const socialMediaLinks = [
+    { name: "Facebook", icon: "./image/facebook.png", link: "https://www.facebook.com" },
+    { name: "Twitter", icon: "./image/twitter.png", link: "https://twitter.com" },
+    { name: "whataapp", icon: "./image/whatsapp.png", link: "https://www.whatsapp.com" },
+    // Add more social media links as needed
+];
+
+// Function to dynamically create social media icons
+function createSocialIcons() {
+    const socialIconsContainer = document.getElementById("socialIconsContainer");
+
+    socialMediaLinks.forEach((socialMedia) => {
+        var iconElement = document.createElement("a");
+        iconElement.href = socialMedia.link;
+        iconElement.target = "_blank";
+        iconElement.innerHTML =`<img src="${socialMedia.icon}" alt="${socialMedia.name}" title="${socialMedia.name}">`;
+
+        socialIconsContainer.appendChild(iconElement);
+    });
+}
+
+// Call the function to create social media icons
+createSocialIcons();

@@ -1,0 +1,25 @@
+#img{
+    width: 600px;
+    height: 500px;
+    margin-right: 30px;
+   border: solid #011e5e 2px;
+} 
+
+.container{
+ display: flex;
+}
+
+
+p{
+ font-size: x-large;
+ margin-left: 50px;
+ margin-top: 50px;
+ font-weight: bold;
+ color: #171718;
+}
+h2{
+ font-size: xx-large;
+ font-weight: bolder;
+ margin-left: 30px;
+ color: #042668;
+} 
